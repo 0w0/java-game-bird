@@ -1,0 +1,18 @@
+<project default="compile">
+<manifest file="build/MANIFEST.MF">
+  <attribute name="Main-Class"
+             value="main.Game" />
+</manifest>
+    <target name="compile">
+        <mkdir dir="build"/>
+        <javac srcdir="src" destdir="build"/>
+    </target>
+    <target name="jar">
+        <jar destfile="./bird.jar" basedir="build/" manifest="build/MANIFEST.MF">
+            <fileset dir="." includes="imgs/**"/>
+            <manifest>
+                <attribute name="Main-Class" value="com.tutorialspoint.util.FaxUtil"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
