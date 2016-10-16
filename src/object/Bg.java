@@ -16,6 +16,8 @@ public class Bg {
 	public void init() throws IOException {
 	bg = ImageIO.read(getClass().getResourceAsStream("/imgs/cbg.jpg"));	
 	under = ImageIO.read(getClass().getResourceAsStream("/imgs/cunder.jpg"));
+	// bg = ImageIO.read(new File("imgs/cbg.jpg"));	
+	// under = ImageIO.read(new File("imgs/cunder.jpg"));
 	
 	underX1 = 0;
 	underX2 = 153;

@@ -13,7 +13,8 @@ public class Ground {
 	
 	
 	public void init() throws IOException {
-	under = ImageIO.read(getClass().getResourceAsStream("/imgs/cunder.png"));
+	under = ImageIO.read(getClass().getResourceAsStream("/imgs/cunder.jpg"));
+	// under = ImageIO.read(new File("imgs/cunder.jpg"));
 	
 	underX1 = 0;
 	underX2 = 153;

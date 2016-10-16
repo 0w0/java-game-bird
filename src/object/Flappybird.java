@@ -26,6 +26,7 @@ public class Flappybird {
 		
 		try {
 			bird = ImageIO.read(getClass().getResourceAsStream("/imgs/bird.png"));
+			// bird = ImageIO.read(new File("imgs/bird.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}	
