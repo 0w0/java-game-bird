@@ -40,9 +40,9 @@ public class Tube {
 		headY = bodyY-23;
 		
 		try {
-			tube_head = ImageIO.read(new File("imgs/tube_head.png"));
-			tube_head_up = ImageIO.read(new File("imgs/tube_head_up.png"));
-			tube_body = ImageIO.read(new File("imgs/tube_body.png"));
+			tube_head = ImageIO.read(getClass().getResourceAsStream("/imgs/tube_head.png"));
+			tube_head_up = ImageIO.read(getClass().getResourceAsStream("/imgs/tube_head_up.png"));
+			tube_body = ImageIO.read(getClass().getResourceAsStream("/imgs/tube_body.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}	
